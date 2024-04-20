@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asetes/css/style.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>    
+    <div class="container">
+
+        <div class="form">
+
+            <form action="#">
+
+                <div class="form-header">
+
+                    <section id="section-cadastro">
+                    <div class="tittle">
+                        <h1>Cadastre-se para o nosso </h1>
+                        <h3>WorkShop</h3>
+                    </div>
+
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="name">Nome:</label>
+                                <input id="name" type="text" placeholder="Digite o nome complemento" required class="campo-ivalido">
+                               
+                                <label for="email">E-mail:</label>
+                                <input id="email" type="email" placeholder="Digite o seu e-mail" required class="campo-invalido">
+                            
+                               
+                                <label for="number">Telefone:</label>
+                                <input id="number" type="tel" placeholder="(DDD) 0 0000-0000" required class="campo-invalido">
+                            
+                                
+                                <label for="date">Data de Nascimento:</label>
+                                <input id="date" type="date" placeholder="Data de Nascimento" required class="campo-invalido">
+                            
+                                <label for="empresa">Empresa:</label>
+                                <input id="empresa" type="text" placeholder="Digite sua empresa" required class="campo-ivalido">
+                            
+                                <label for="cargo">Seu Cargo:</label>
+                                <input id="cargo" type="text" placeholder="Digite o seu cargo" required class="campo-ivalido">
+                            </div>
+                            <div class="grander-inputs">
+                                <div class="gender-tittle">
+                                    <h4>Gêrenro</h4>
+                                </div>
+                                <div class="gender-group">
+                                    <input type="radio" id="female" name="gender">
+                                    <label for="female">Feminino</label>
+                                
+                                
+                                    <input type="radio" id="male" name="gender">
+                                    <label for="maele">Masculino</label>
+                                
+                                    <input type="radio" id="others" name="gender">
+                                    <label for="othes">Outros</label>
+                               
+                                    <input type="radio" id="none" name="gender">
+                                    <label for="none">Prefiro não dizer</label>
+                                </div><br>
+
+                                <div class="cadasrto-button">
+                                    <button id="proximo">
+                                        Proximo
+                                    </button>
+                                    </div>
+
+                            </div>
+                        </section>
+                        <section id="section-endereço">
+                            <div class="tittle">
+                              <h2>Endereço</h2>
+                            </div>  
+                        
+                                    
+                                    <div class="input-group">
+                                        <div class="input-box">
+                                            <label for="cep">CEP:</label>
+                                            <input id="cep" type="tel" name="cep" placeholder="00000-000" required class="campo-invalido">
+                                        
+                                            <label for="rua">Rua:</label>
+                                            <input id="rua" type="text" name="rua" placeholder="Rua" required class="campo-invalido">
+                                        
+                                            <label for="numero">Número:</label>
+                                            <input id="numero" type="tel" name="numero" placeholder="nº***" required class="campo-invalido">
+                                        
+                                            <label for="bairro">Bairro:</label>
+                                            <input id="bairro" type="text" name="bairro" placeholder="Informe o Seu Bairro" required class="campo-invalido">
+                                       
+                                            <label for="cidade">Cidade:</label>
+                                            <input id="cidade" type="text" name="cidade" placeholder="Informe a sua cidade" required class="campo-invalido">
+                                        </div>
+                    <div class="regiao"> 
+                     <label for="uf">Estado:</label>
+                    <select name="Estado" id="uf">
+                    <option value="0">Escolha sua Região</option>
+                    <optgroup label="Norte">
+                        <option value="1">Acre</option>
+                        <option value="2">Amazonas</option>
+                        <option value="3">Amapá</option>
+                        <option value="4">Pará</option>
+                        <option value="5">Rondônia</option>
+                        <option value="6">Roraima</option>
+                        <option value="7">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Nordeste">
+                        <option value="8">Alagoas</option>
+                        <option value="9">Bahia</option>
+                        <option value="10">Ceará</option>
+                        <option value="11">Maranhão</option>
+                        <option value="12">Piauí</option>
+                        <option value="13">Pernambuco</option>
+                        <option value="14">Paraiba</option>
+                        <option value="15">Rio Grande do Norte</option>
+                        <option value="16">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Centro-Oeste">
+                        <option value="17">Goiás</option>
+                        <option value="18">Mato Grosso</option>
+                        <option value="19">Mato Grosso do Sul</option>
+                        <option value="20">Distrito Federal</option>
+                    </optgroup>
+                    <optgroup label="Suldeste">
+                        <option value="21">Espirito Santo</option>
+                        <option value="22">Minas Gerais </option>
+                        <option value="23">Rio de Janeiro</option>
+                        <option value="24">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="25">Paraná</option>
+                        <option value="26">Rio Grande do Sul</option>
+                        <option value="27">Santa Catarina</option>
+                    </optgroup>
+                    </select> 
+                    </div>
+                                        
+                                        <div class="input-box">
+                                            <label for="complemento">Complemento:</label>
+                                            <input id="complemento" type="text" name="complemento" placeholder="Andar, Apartamento, Região">
+                                        </div>
+                                        
+                                        <div class="mensagem">
+                                        <label for="mensagem">Deixe a sua Mensagem:</label> <br><br>
+                                        <textarea cols="48" rows="10"></textarea>
+                                         </div>
+
+                                        <div class="enviar-button">
+                                        
+                                            <button id="voltar">
+                                            <a href="#">Voltar</a>
+                                            </button>
+
+                                            <button id="enviar">
+                                            <a href="#">Enviar</a>
+
+                                            </div>
+    
+                            </section>
+                                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script> 
+</body>
+
+</html>
